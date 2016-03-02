@@ -4,10 +4,10 @@ test_executable: main.o vector.o
 	g++ main.o vector.o -o test_executable
 
 main.o: main.cpp vector.h
-	g++ -c main.cpp
+	g++ -c main.cc
 
 vector.o: vector.cpp vector.h
-	g++ -c vector.cpp
+	g++ -c vector.cc
 
 clean:
 	rm -f *.o test_executable *~ #*
